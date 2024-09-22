@@ -1,0 +1,17 @@
+/* 
+<link rel="stylesheet" href="../additional-style.css">
+*/
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.bd-2k-banner {
+  animation: blink 0.5s 3;
+}
