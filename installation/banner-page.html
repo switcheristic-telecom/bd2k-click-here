@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banner Image with OCR Result</title>
+    <script src="./lib/qrcode.min.js"></script>
     <style>
       body,
       html {
@@ -14,7 +15,7 @@
         justify-content: center;
         align-items: center;
         background-color: #1c54f5;
-        font-family: Arial, sans-serif;
+        font-family: Arial, sans-serif, 'Noto Sans CJK';
       }
       .container {
         position: relative;
@@ -61,6 +62,14 @@
         text-decoration: underline;
         cursor: default;
       }
+
+      .bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -69,13 +78,19 @@
       <div id="ocrResult" class="ocr-result"></div>
     </div>
     <div id="language-selector-nav">
-      <div class="language-button" id="en-button">EN</div>
+      <div class="language-button" id="en-button">Click here</div>
       <span> / </span>
-      <div class="language-button" id="es-button">ES</div>
+      <!-- <div class="language-button" id="es-button">ES</div> -->
+      <div class="language-button" id="es-button">Clic aquí</div>
       <span> / </span>
-      <div class="language-button" id="ja-button">JA</div>
+      <!-- <div class="language-button" id="ja-button">JA</div> -->
+      <div class="language-button" id="ja-button">クリック</div>
       <span> / </span>
-      <div class="language-button" id="zh-button">ZH</div>
+      <div class="language-button" id="zh-button">点击</div>
+    </div>
+
+    <div id="yinliu" class="bottom-right">
+      <div id="qrcode"></div>
     </div>
 
     <script src="./banner-page.js"></script>

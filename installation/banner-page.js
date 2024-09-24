@@ -20,7 +20,7 @@
 */
 let bannerData = [];
 let currentLanguage = null;
-
+let qrCodeGenerator = null;
 /**
  * GET ELEMENTS
  */
@@ -36,6 +36,10 @@ const ALL_BUTTONS = [esButton, enButton, jaButton, zhButton];
 const container = document.getElementById('imageContainer');
 const bannerImage = document.getElementById('bannerImage');
 const ocrDiv = document.getElementById('ocrResult');
+
+// Banner Depot 2000 Marketing
+const bannerDepotLink = document.getElementById('yinliu');
+const qrCode = document.getElementById('qrcode');
 
 esButton.addEventListener('click', () => setLanguage('es'));
 enButton.addEventListener('click', () => setLanguage('en'));
@@ -73,6 +77,7 @@ function setLanguage(language) {
 
   const bannerDatum = selectBannerDatum(currentLanguage);
   setCurrentBanner(bannerDatum);
+  saveToLocalStorage(bannerDatum);
 }
 
 function selectBannerDatum(language) {
@@ -88,7 +93,10 @@ function selectBannerDatum(language) {
 function handleClick() {
   const bannerDatum = selectBannerDatum(currentLanguage);
   setCurrentBanner(bannerDatum);
+  saveToLocalStorage(bannerDatum);
+}
 
+function saveToLocalStorage(bannerDatum) {
   // save the current banner to local storage
   localStorage.setItem('currentBanner', JSON.stringify(bannerDatum));
   // save the timestamp of the last click
@@ -125,4 +133,25 @@ function setCurrentBanner(datum) {
   const translateX = (imageWidth - (ocrResult.x1 + ocrResult.x2)) / 2;
   const translateY = (imageHeight - (ocrResult.y1 + ocrResult.y2)) / 2;
   container.style.transform = `translate(${translateX}px, ${translateY}px)`;
+
+  const url = makeBannerDepotLink(item.md5);
+  if (!qrCodeGenerator) {
+    qrCodeGenerator = new QRCode('qrcode', {
+      text: url,
+      width: 128,
+      height: 128,
+      colorDark: '#1c54f5',
+      colorLight: '#ffffff',
+      correctLevel: QRCode.CorrectLevel.L,
+    });
+  } else {
+    qrCodeGenerator.clear();
+    qrCodeGenerator.makeCode(url);
+  }
+}
+
+function makeBannerDepotLink(md5) {
+  // https://www.banner-depot-2000.net/banner/4f07fd4ac15eb9ef6da9bdaf0532534c/GIF
+  const bannerDepotLink = `https://www.banner-depot-2000.net/banner/${md5}/GIF`;
+  return bannerDepotLink;
 }
