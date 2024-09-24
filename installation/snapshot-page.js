@@ -12,10 +12,11 @@ function updateBanner() {
   if (storedBanner) {
     const bannerData = JSON.parse(storedBanner);
     const htmlPath = bannerData.html_path;
+    const htmlPathWithID = htmlPath + '#bd-2k-banner';
 
-    if (htmlPath !== currentBannerPath) {
-      bannerFrame.src = htmlPath;
-      currentBannerPath = htmlPath;
+    if (htmlPathWithID !== currentBannerPath) {
+      bannerFrame.src = htmlPathWithID;
+      currentBannerPath = htmlPathWithID;
     }
 
     const timeSinceLastClick = Date.now() - parseInt(lastClick);
