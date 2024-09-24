@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click here / Clic aquí / クリック / 点击</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        height: 100vh;
+        background-color: #008080;
+        font-family: 'MS Sans Serif', Arial, sans-serif;
+        overflow: hidden;
+      }
+      .window {
+        position: absolute;
+        width: 640px;
+        height: 480px;
+        background-color: #c0c0c0;
+        border: 2px solid #dfdfdf;
+        border-right-color: #808080;
+        border-bottom-color: #808080;
+        box-shadow: 2px 2px 0 #000000;
+      }
+      .title-bar {
+        background-color: #000080;
+        color: white;
+        padding: 2px 4px;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: move;
+        user-select: none;
+      }
+      .content {
+        position: absolute;
+        top: 22px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        background-color: #fff;
+        overflow: hidden;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      .resizer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 15px;
+        height: 15px;
+        background-color: #c0c0c0;
+        cursor: se-resize;
+      }
+      .resizer::before,
+      .resizer::after {
+        content: '';
+        position: absolute;
+        right: 3px;
+        bottom: 3px;
+        width: 5px;
+        height: 5px;
+        background-color: #000;
+      }
+      .resizer::before {
+        bottom: 8px;
+        right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="window" id="window1" style="top: 50px; left: 50px">
+      <div class="title-bar">Click here / Clic aquí / クリック / 点击</div>
+      <div class="content">
+        <iframe src="./banner-page.html"></iframe>
+      </div>
+      <div class="resizer"></div>
+    </div>
+    <div class="window" id="window2" style="top: 100px; right: 50px">
+      <div class="title-bar">Source Webpage</div>
+      <div class="content">
+        <iframe src="snapshot-page.html"></iframe>
+      </div>
+      <div class="resizer"></div>
+    </div>
+
+    <script>
+      document.querySelectorAll('.window').forEach(makeWindowInteractive);
+
+      function makeWindowInteractive(window) {
+        const titleBar = window.querySelector('.title-bar');
+        const resizer = window.querySelector('.resizer');
+        let isResizing = false;
+        let isDragging = false;
+        let startX, startY, startWidth, startHeight, startLeft, startTop;
+
+        titleBar.addEventListener('mousedown', initDrag);
+        resizer.addEventListener('mousedown', initResize);
+
+        function initDrag(e) {
+          isDragging = true;
+          startX = e.clientX;
+          startY = e.clientY;
+          startLeft = window.offsetLeft;
+          startTop = window.offsetTop;
+          document.addEventListener('mousemove', drag);
+          document.addEventListener('mouseup', stopDrag);
+        }
+
+        function drag(e) {
+          if (isDragging) {
+            const deltaX = e.clientX - startX;
+            const deltaY = e.clientY - startY;
+            window.style.left = startLeft + deltaX + 'px';
+            window.style.top = startTop + deltaY + 'px';
+          }
+        }
+
+        function stopDrag() {
+          isDragging = false;
+          document.removeEventListener('mousemove', drag);
+          document.removeEventListener('mouseup', stopDrag);
+        }
+
+        function initResize(e) {
+          isResizing = true;
+          startX = e.clientX;
+          startY = e.clientY;
+          startWidth = parseInt(
+            document.defaultView.getComputedStyle(window).width,
+            10
+          );
+          startHeight = parseInt(
+            document.defaultView.getComputedStyle(window).height,
+            10
+          );
+          document.addEventListener('mousemove', resize);
+          document.addEventListener('mouseup', stopResize);
+        }
+
+        function resize(e) {
+          if (isResizing) {
+            const width = startWidth + e.clientX - startX;
+            const height = startHeight + e.clientY - startY;
+            window.style.width = width + 'px';
+            window.style.height = height + 'px';
+          }
+        }
+
+        function stopResize() {
+          isResizing = false;
+          document.removeEventListener('mousemove', resize);
+          document.removeEventListener('mouseup', stopResize);
+        }
+      }
+    </script>
+  </body>
+</html>
