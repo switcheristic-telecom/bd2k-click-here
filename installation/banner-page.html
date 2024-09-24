@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banner Image with OCR Result</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1c54f5;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        position: relative;
+        display: inline-block;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      .ocr-result {
+        position: absolute;
+        background-color: rgba(244, 244, 0, 0.2);
+        padding: 5px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .ocr-result:hover {
+        opacity: 1;
+      }
+
+      #language-selector-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+      .language-button {
+        cursor: pointer;
+      }
+      .language-button:hover {
+        text-decoration: underline;
+      }
+      .language-button.active {
+        text-decoration: underline;
+        cursor: default;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="imageContainer">
+      <img id="bannerImage" src="" alt="Banner Image" />
+      <div id="ocrResult" class="ocr-result"></div>
+    </div>
+    <div id="language-selector-nav">
+      <div class="language-button" id="en-button">EN</div>
+      <span> / </span>
+      <div class="language-button" id="es-button">ES</div>
+      <span> / </span>
+      <div class="language-button" id="ja-button">JA</div>
+      <span> / </span>
+      <div class="language-button" id="zh-button">ZH</div>
+    </div>
+
+    <script src="./banner-page.js"></script>
+  </body>
+</html>
