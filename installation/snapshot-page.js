@@ -30,5 +30,4 @@ function updateBanner() {
 // Initial update
 updateBanner();
 
-// Periodically check for changes (every 1 second)
-setInterval(updateBanner, 500);
+setInterval(updateBanner, 100);
