@@ -6,6 +6,15 @@
     <title>Click here / Clic aquí / クリック / 点击</title>
     <script src="./lib/qrcode.min.js"></script>
     <style>
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
       @font-face {
         font-family: 'Ark Pixel 10px Monospaced';
         src: url('fonts/ark-pixel-10px-monospaced-latin.woff2') format('woff2'),
@@ -38,21 +47,29 @@
       }
       .ocr-result {
         position: absolute;
-        background-color: rgba(244, 244, 0, 0.2);
         padding: 5px;
-        font-family: Arial, sans-serif;
         font-size: 14px;
         transform: translate(-50%, -50%);
         cursor: pointer;
         opacity: 0;
         transition: opacity 0.5s ease;
-        padding: 16px;
-        padding-left: 48px;
-        padding-right: 48px;
+        /* background-color: rgba(244, 244, 0, 0.2); */
+        /* background-color: #1c54f5; */
+        border: #ff0000;
+        border-width: 10px;
+        border-style: solid;
       }
 
       .ocr-result:hover {
-        opacity: 1;
+        opacity: 0;
+      }
+
+      #ocrResultClickTarget {
+        background-color: #1c54f5;
+        z-index: 10;
+        padding: 16px;
+        padding-left: 48px;
+        padding-right: 48px;
       }
 
       #language-selector-nav {
@@ -88,14 +105,21 @@
       #qrcode {
         opacity: 0.5;
       }
+      .no-select {
+        -webkit-user-select: none; /* Chrome, Safari, and Opera */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+      }
     </style>
   </head>
   <body>
     <div class="container" id="imageContainer">
-      <img id="bannerImage" src="" alt="Banner Image" />
-      <div id="ocrResult" class="ocr-result"></div>
+      <img id="bannerImage" src="" alt="Banner Image" class="no-select" />
+      <div id="ocrResult" class="ocr-result no-select"></div>
+      <div id="ocrResultClickTarget" class="ocr-result no-select"></div>
     </div>
-    <div id="language-selector-nav">
+    <div id="language-selector-nav" class="no-select">
       <div class="language-button" id="en-button">Click here</div>
       <span> / </span>
       <!-- <div class="language-button" id="es-button">ES</div> -->
@@ -107,9 +131,9 @@
       <div class="language-button" id="zh-button">点击</div>
     </div>
 
-    <div id="yinliu" class="bottom-right">
+    <!-- <div id="yinliu" class="bottom-right">
       <div id="qrcode"></div>
-    </div>
+    </div> -->
 
     <script src="./banner-page.js"></script>
   </body>

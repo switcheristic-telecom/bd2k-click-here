@@ -26,6 +26,8 @@ let qrCodeGenerator = null;
  */
 
 // Language buttons
+const body = document.body;
+
 const esButton = document.getElementById('es-button');
 const enButton = document.getElementById('en-button');
 const jaButton = document.getElementById('ja-button');
@@ -36,6 +38,7 @@ const ALL_BUTTONS = [esButton, enButton, jaButton, zhButton];
 const container = document.getElementById('imageContainer');
 const bannerImage = document.getElementById('bannerImage');
 const ocrDiv = document.getElementById('ocrResult');
+const ocrClickDiv = document.getElementById('ocrResultClickTarget');
 
 // Banner Depot 2000 Marketing
 const bannerDepotLink = document.getElementById('yinliu');
@@ -46,7 +49,22 @@ enButton.addEventListener('click', () => setLanguage('en'));
 jaButton.addEventListener('click', () => setLanguage('ja'));
 zhButton.addEventListener('click', () => setLanguage('zh'));
 
-ocrDiv.addEventListener('click', handleClick);
+ocrClickDiv.addEventListener('click', handleClick);
+body.addEventListener('click', handleMissedClick);
+
+function handleMissedClick(event) {
+  //  animation: blink 0.5s 3;
+  // if the user click on anything but the OCR result, the OCR result will blink
+  if (event.target === ocrDiv || event.target === ocrClickDiv) {
+    return;
+  }
+  // reset the animation
+  ocrDiv.style.animation = 'none';
+  void ocrDiv.offsetWidth;
+  // restart the animation
+  ocrDiv.style.animation = 'blink 0.5s 3';
+  console.log('Missed Click');
+}
 
 // Load the banner data from the JSON file
 fetch('banner_data.json')
@@ -114,7 +132,6 @@ function setCurrentBanner(datum) {
   bannerImage.src = imagePath;
 
   // Position the OCR result
-  const ocrDiv = document.getElementById('ocrResult');
   const centerX = (ocrResult.x1 + ocrResult.x2) / 2;
   const centerY = (ocrResult.y1 + ocrResult.y2) / 2;
   const ocrWidth = ocrResult.x2 - ocrResult.x1;
@@ -124,6 +141,11 @@ function setCurrentBanner(datum) {
   ocrDiv.style.top = `${(centerY / imageHeight) * 100}%`;
   ocrDiv.style.height = `${ocrHeight}px`;
   ocrDiv.style.width = `${ocrWidth}px`;
+
+  ocrClickDiv.style.left = `${(centerX / imageWidth) * 100}%`;
+  ocrClickDiv.style.top = `${(centerY / imageHeight) * 100}%`;
+  ocrClickDiv.style.height = `${ocrHeight}px`;
+  ocrClickDiv.style.width = `${ocrWidth}px`;
 
   // Adjust container size to match image dimensions
   container.style.width = `${imageWidth}px`;
@@ -135,18 +157,20 @@ function setCurrentBanner(datum) {
   container.style.transform = `translate(${translateX}px, ${translateY}px)`;
 
   const url = makeBannerDepotLink(item.md5);
-  if (!qrCodeGenerator) {
-    qrCodeGenerator = new QRCode('qrcode', {
-      text: url,
-      width: 128,
-      height: 128,
-      colorDark: '#1c54f5',
-      colorLight: '#ffffff',
-      correctLevel: QRCode.CorrectLevel.L,
-    });
-  } else {
-    qrCodeGenerator.clear();
-    qrCodeGenerator.makeCode(url);
+  if (qrCode) {
+    if (!qrCodeGenerator) {
+      qrCodeGenerator = new QRCode('qrcode', {
+        text: url,
+        width: 128,
+        height: 128,
+        colorDark: '#1c54f5',
+        colorLight: '#ffffff',
+        correctLevel: QRCode.CorrectLevel.L,
+      });
+    } else {
+      qrCodeGenerator.clear();
+      qrCodeGenerator.makeCode(url);
+    }
   }
 }
 
