@@ -6,6 +6,16 @@
     <title>Click here / Clic aquí / クリック / 点击</title>
     <script src="./lib/qrcode.min.js"></script>
     <style>
+      @font-face {
+        font-family: 'Ark Pixel 10px Monospaced';
+        src: url('fonts/ark-pixel-10px-monospaced-latin.woff2') format('woff2'),
+          url('fonts/ark-pixel-10px-monospaced-ja.woff2') format('woff2'),
+          url('fonts/ark-pixel-10px-monospaced-ko.woff2') format('woff2'),
+          url('fonts/ark-pixel-10px-monospaced-zh_cn.woff2') format('woff2'),
+          url('fonts/ark-pixel-10px-monospaced-zh_hk.woff2') format('woff2'),
+          url('fonts/ark-pixel-10px-monospaced-zh_tr.woff2') format('woff2'),
+          url('fonts/ark-pixel-10px-monospaced-zh_tw.woff2') format('woff2');
+      }
       body,
       html {
         margin: 0;
@@ -15,7 +25,7 @@
         justify-content: center;
         align-items: center;
         background-color: #1c54f5;
-        font-family: Arial, sans-serif, 'Noto Sans CJK';
+        font-family: 'Ark Pixel 10px Monospaced', Arial, sans-serif;
       }
       .container {
         position: relative;
@@ -54,12 +64,12 @@
         display: flex;
         flex-direction: row;
         gap: 10px;
-        font-size: 2em;
+        font-size: 2rem;
       }
       .language-button {
         cursor: pointer;
       }
-      
+
       .language-button:hover {
         text-decoration: underline;
       }
