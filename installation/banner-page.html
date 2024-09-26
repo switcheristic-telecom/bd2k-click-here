@@ -80,7 +80,7 @@
         color: white;
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 24px;
         font-size: 2rem;
       }
       .language-button {
@@ -111,6 +111,10 @@
         -ms-user-select: none; /* Internet Explorer/Edge */
         user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
       }
+      .separator{
+        margin-top:auto;
+        margin-bottom: auto;
+      }
     </style>
   </head>
   <body>
@@ -120,15 +124,15 @@
       <div id="ocrResultClickTarget" class="ocr-result no-select"></div>
     </div>
     <div id="language-selector-nav" class="no-select">
-      <div class="language-button" id="en-button">Click here</div>
-      <span> / </span>
+      <div class="language-button" id="en-button">Click<br /> here</div>
+      <span class="separator"> / </span>
       <!-- <div class="language-button" id="es-button">ES</div> -->
-      <div class="language-button" id="es-button">Clic aquí</div>
-      <span> / </span>
+      <div class="language-button" id="es-button">Clic<br /> aquí</div>
+      <span class="separator"> / </span>
       <!-- <div class="language-button" id="ja-button">JA</div> -->
-      <div class="language-button" id="ja-button">クリック</div>
-      <span> / </span>
-      <div class="language-button" id="zh-button">点击</div>
+      <div class="language-button" id="ja-button">ここを<br />クリック</div>
+      <span class="separator"> / </span>
+      <div class="language-button" id="zh-button">点击<br />这里</div>
     </div>
 
     <!-- <div id="yinliu" class="bottom-right">
