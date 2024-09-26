@@ -62,7 +62,7 @@ function handleMissedClick(event) {
   ocrDiv.style.animation = 'none';
   void ocrDiv.offsetWidth;
   // restart the animation
-  ocrDiv.style.animation = 'blink 0.5s 3';
+  ocrDiv.style.animation = 'blink 1.5s 1';
   console.log('Missed Click');
 }
 
