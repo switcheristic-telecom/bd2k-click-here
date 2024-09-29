@@ -1,7 +1,8 @@
 const iframeContainer = document.getElementById('iframeContainer');
+const slideshowContainer = document.getElementById('slideshowContainer');
 const bannerFrame = document.getElementById('bannerFrame');
 
-const NON_INTERACTIVE_DURATION_MS = 5 * 60 * 1000; // 5 minutes
+const NON_INTERACTIVE_DURATION_MS = 3 * 60 * 1000; // 3 minutes
 
 let currentBannerPath = '';
 
@@ -22,8 +23,10 @@ function updateBanner() {
     const timeSinceLastClick = Date.now() - parseInt(lastClick);
     if (timeSinceLastClick > NON_INTERACTIVE_DURATION_MS) {
       iframeContainer.style.opacity = '0';
+      slideshowContainer.style.opacity = '1';
     } else {
       iframeContainer.style.opacity = '1';
+      slideshowContainer.style.opacity = '0';
     }
   }
 }
