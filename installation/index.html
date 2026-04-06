@@ -92,6 +92,13 @@
         bottom: 8px;
         right: 8px;
       }
+      .window {
+        will-change: transform;
+        contain: layout style;
+      }
+      .window.dragging {
+        box-shadow: none;
+      }
     </style>
   </head>
   <body>
@@ -102,7 +109,7 @@
       </div>
       <div class="resizer"></div>
     </div>
-    <div class="window" id="window2" style="top: 100px; right: 50px">
+    <div class="window" id="window2" style="top: 100px; left: calc(100vw - 690px)">
       <div class="title-bar">Source Webpage</div>
       <div class="content">
         <iframe src="snapshot-page.html"></iframe>
@@ -111,70 +118,87 @@
     </div>
 
     <script>
+      const allIframes = document.querySelectorAll('iframe');
       document.querySelectorAll('.window').forEach(makeWindowInteractive);
 
-      function makeWindowInteractive(window) {
-        const titleBar = window.querySelector('.title-bar');
-        const resizer = window.querySelector('.resizer');
-        let isResizing = false;
-        let isDragging = false;
+      function disableIframePointerEvents() {
+        allIframes.forEach(f => f.style.pointerEvents = 'none');
+      }
+      function enableIframePointerEvents() {
+        allIframes.forEach(f => f.style.pointerEvents = '');
+      }
+
+      function makeWindowInteractive(win) {
+        const titleBar = win.querySelector('.title-bar');
+        const resizer = win.querySelector('.resizer');
         let startX, startY, startWidth, startHeight, startLeft, startTop;
+        let pendingX, pendingY, rafId;
 
         titleBar.addEventListener('mousedown', initDrag);
         resizer.addEventListener('mousedown', initResize);
 
         function initDrag(e) {
-          isDragging = true;
           startX = e.clientX;
           startY = e.clientY;
-          startLeft = window.offsetLeft;
-          startTop = window.offsetTop;
+          startLeft = win.offsetLeft;
+          startTop = win.offsetTop;
+          win.classList.add('dragging');
+          disableIframePointerEvents();
           document.addEventListener('mousemove', drag);
           document.addEventListener('mouseup', stopDrag);
         }
 
         function drag(e) {
-          if (isDragging) {
-            const deltaX = e.clientX - startX;
-            const deltaY = e.clientY - startY;
-            window.style.left = startLeft + deltaX + 'px';
-            window.style.top = startTop + deltaY + 'px';
+          pendingX = e.clientX;
+          pendingY = e.clientY;
+          if (!rafId) {
+            rafId = requestAnimationFrame(() => {
+              win.style.transform = 'translate(' + (pendingX - startX) + 'px,' + (pendingY - startY) + 'px)';
+              rafId = null;
+            });
           }
         }
 
         function stopDrag() {
-          isDragging = false;
+          if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+          // Bake transform into left/top
+          win.style.left = startLeft + ((pendingX || startX) - startX) + 'px';
+          win.style.top = startTop + ((pendingY || startY) - startY) + 'px';
+          win.style.transform = '';
+          win.classList.remove('dragging');
+          enableIframePointerEvents();
           document.removeEventListener('mousemove', drag);
           document.removeEventListener('mouseup', stopDrag);
         }
 
         function initResize(e) {
-          isResizing = true;
           startX = e.clientX;
           startY = e.clientY;
-          startWidth = parseInt(
-            document.defaultView.getComputedStyle(window).width,
-            10
-          );
-          startHeight = parseInt(
-            document.defaultView.getComputedStyle(window).height,
-            10
-          );
+          const rect = win.getBoundingClientRect();
+          startWidth = rect.width;
+          startHeight = rect.height;
+          win.classList.add('dragging');
+          disableIframePointerEvents();
           document.addEventListener('mousemove', resize);
           document.addEventListener('mouseup', stopResize);
         }
 
         function resize(e) {
-          if (isResizing) {
-            const width = startWidth + e.clientX - startX;
-            const height = startHeight + e.clientY - startY;
-            window.style.width = width + 'px';
-            window.style.height = height + 'px';
+          pendingX = e.clientX;
+          pendingY = e.clientY;
+          if (!rafId) {
+            rafId = requestAnimationFrame(() => {
+              win.style.width = (startWidth + pendingX - startX) + 'px';
+              win.style.height = (startHeight + pendingY - startY) + 'px';
+              rafId = null;
+            });
           }
         }
 
         function stopResize() {
-          isResizing = false;
+          if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+          win.classList.remove('dragging');
+          enableIframePointerEvents();
           document.removeEventListener('mousemove', resize);
           document.removeEventListener('mouseup', stopResize);
         }
