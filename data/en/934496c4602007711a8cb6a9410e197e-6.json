@@ -1,0 +1,28 @@
+{
+  "version": "5.5.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "0",
+      "points": [
+        [
+          67.8664627930683,
+          20.77471967380224
+        ],
+        [
+          115.2670744138634,
+          39.32721712538226
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "934496c4602007711a8cb6a9410e197e-6.gif",
+  "imageData": "iVBORw0KGgoAAAANSUhEUgAAAOoAAAA8AgMAAAAVnc7vAAAADFBMVEUAAABmZma4mZn///3gBSIyAAABE0lEQVR4nO3SMU7DMBTG8c+OqjdkMGOlSPQGcILWYWZh6c7IIVKIxJUYK/kxMbC4N8gRLGSJVnJkFBchRqez/4O3n55sP6BUKpVKs3sSLYBHAKKfSdWRBkA5ALc804pk5WRproWXPSAutGn6JXYLjytsz/b9AYsWol20OVTG1jeDjHeutqDPAOObDzY+x64IvrHXJNwNQONYcdfEV+5ybFfBV7arhHsDyD7XvKbhntc5do/J7iG+7PRWG9XviFW/y7Eh2QARf230xCpm3ffPfvuzZRCrvL8akx0hXJhtTbIGwr0kSwOIpyXNSB+Ep0EfpF8xaruRp2Vt5WmZY+uoog7TWXvoo2YTdIAJWYNLpVKp9K8fuRF4xNsjZN8AAAAASUVORK5CYII=",
+  "imageHeight": 60,
+  "imageWidth": 234
+}

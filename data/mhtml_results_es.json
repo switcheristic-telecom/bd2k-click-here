@@ -1,0 +1,614 @@
+[
+    {
+        "banner_md5": "babe326590a58b27d8eea7bc249e1fcd",
+        "mhtml_file": "es/mhtml_intl_es/65a4721a377d4793c628cbc4/20010702065147.mhtml"
+    },
+    {
+        "banner_md5": "e73c87497da045675054b4992c1017e0",
+        "mhtml_file": "es/mhtml_intl_es/65a47224377d4793c628cbf0/20020205211506.mhtml"
+    },
+    {
+        "banner_md5": "ecd8009c90f3f12e58ec60f6651d4074",
+        "mhtml_file": "es/mhtml_intl_es/65a47228377d4793c628cbff/20000822013048.mhtml"
+    },
+    {
+        "banner_md5": "ecd8009c90f3f12e58ec60f6651d4074",
+        "mhtml_file": "es/mhtml_intl_es/65a47228377d4793c628cbff/20001109121000.mhtml"
+    },
+    {
+        "banner_md5": "ecd8009c90f3f12e58ec60f6651d4074",
+        "mhtml_file": "es/mhtml_intl_es/65a47228377d4793c628cbff/20010410204111.mhtml"
+    },
+    {
+        "banner_md5": "ecd8009c90f3f12e58ec60f6651d4074",
+        "mhtml_file": "es/mhtml_intl_es/65a47228377d4793c628cbff/20010606135111.mhtml"
+    },
+    {
+        "banner_md5": "ecd8009c90f3f12e58ec60f6651d4074",
+        "mhtml_file": "es/mhtml_intl_es/65a47228377d4793c628cbff/20010607135710.mhtml"
+    },
+    {
+        "banner_md5": "ecd8009c90f3f12e58ec60f6651d4074",
+        "mhtml_file": "es/mhtml_intl_es/65a47228377d4793c628cbff/20010803092356.mhtml"
+    },
+    {
+        "banner_md5": "b9b0e4bfc347a16426f456937ce74ffb",
+        "mhtml_file": "es/mhtml_intl_es/65a4722c377d4793c628cc0e/20010619032748.mhtml"
+    },
+    {
+        "banner_md5": "b9b0e4bfc347a16426f456937ce74ffb",
+        "mhtml_file": "es/mhtml_intl_es/65a4722c377d4793c628cc0e/20010620140415.mhtml"
+    },
+    {
+        "banner_md5": "b9b0e4bfc347a16426f456937ce74ffb",
+        "mhtml_file": "es/mhtml_intl_es/65a4722c377d4793c628cc0e/20010620141853.mhtml"
+    },
+    {
+        "banner_md5": "6f28dd2253e87c6ca2621d96cefec7a3",
+        "mhtml_file": "es/mhtml_intl_es/65a47244377d4793c628cc6b/19991104145153.mhtml"
+    },
+    {
+        "banner_md5": "045853c266c0c61bc7e2072d640ef7ae",
+        "mhtml_file": "es/mhtml_intl_es/65a47244377d4793c628cc6b/20020923042227.mhtml"
+    },
+    {
+        "banner_md5": "db660c53f1c6943f7391060f7936cc67",
+        "mhtml_file": "es/mhtml_intl_es/65a47244377d4793c628cc6b/20021129043135.mhtml"
+    },
+    {
+        "banner_md5": "9061606fcd3c3a8120aac44293a58957",
+        "mhtml_file": "es/mhtml_intl_es/65a4725e377d4793c628ccd2/20020605194102.mhtml"
+    },
+    {
+        "banner_md5": "db660c53f1c6943f7391060f7936cc67",
+        "mhtml_file": "es/mhtml_intl_es/65a4725e377d4793c628ccd2/20021203172732.mhtml"
+    },
+    {
+        "banner_md5": "cf203aaef66c12275b4f667fe4964104",
+        "mhtml_file": "es/mhtml_intl_es/65a4725e377d4793c628ccd4/20010405045214.mhtml"
+    },
+    {
+        "banner_md5": "cf203aaef66c12275b4f667fe4964104",
+        "mhtml_file": "es/mhtml_intl_es/65a4725e377d4793c628ccd4/20010418173059.mhtml"
+    },
+    {
+        "banner_md5": "cf203aaef66c12275b4f667fe4964104",
+        "mhtml_file": "es/mhtml_intl_es/65a4725e377d4793c628ccd4/20010708224639.mhtml"
+    },
+    {
+        "banner_md5": "cf203aaef66c12275b4f667fe4964104",
+        "mhtml_file": "es/mhtml_intl_es/65a4725e377d4793c628ccd4/20010709170757.mhtml"
+    },
+    {
+        "banner_md5": "cf203aaef66c12275b4f667fe4964104",
+        "mhtml_file": "es/mhtml_intl_es/65a4725e377d4793c628ccd4/20010710035829.mhtml"
+    },
+    {
+        "banner_md5": "cf203aaef66c12275b4f667fe4964104",
+        "mhtml_file": "es/mhtml_intl_es/65a4725e377d4793c628ccd4/20010710042021.mhtml"
+    },
+    {
+        "banner_md5": "cf203aaef66c12275b4f667fe4964104",
+        "mhtml_file": "es/mhtml_intl_es/65a4725e377d4793c628ccd4/20010712001441.mhtml"
+    },
+    {
+        "banner_md5": "cf203aaef66c12275b4f667fe4964104",
+        "mhtml_file": "es/mhtml_intl_es/65a4725e377d4793c628ccd4/20010713130243.mhtml"
+    },
+    {
+        "banner_md5": "59ec9e7b92550320cfbe07f738433c49",
+        "mhtml_file": "es/mhtml_intl_es/65a4725e377d4793c628ccd4/20020124115951.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20000510060643.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20000510170355.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20000511233152.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20000520015046.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20000520072125.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20000620165018.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20000622080220.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20000711001721.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20000816194257.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20001109003900.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20010118220000.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20010204234600.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20010301082030.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20010302004827.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20010330063438.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20010509084612.mhtml"
+    },
+    {
+        "banner_md5": "dfedc6f63b18ce049854c3e1fa6bd3a2",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20010517001836.mhtml"
+    },
+    {
+        "banner_md5": "70114013cae7c7fcae7562af169e976a",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20020921133603.mhtml"
+    },
+    {
+        "banner_md5": "70114013cae7c7fcae7562af169e976a",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20020924073204.mhtml"
+    },
+    {
+        "banner_md5": "70114013cae7c7fcae7562af169e976a",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20020926012412.mhtml"
+    },
+    {
+        "banner_md5": "70114013cae7c7fcae7562af169e976a",
+        "mhtml_file": "es/mhtml_intl_es/65a47261377d4793c628ccdd/20020926173554.mhtml"
+    },
+    {
+        "banner_md5": "33f220e36b5411b0635843162ff28fac",
+        "mhtml_file": "es/mhtml_intl_es/65a47267377d4793c628ccf7/20000816193935.mhtml"
+    },
+    {
+        "banner_md5": "33f220e36b5411b0635843162ff28fac",
+        "mhtml_file": "es/mhtml_intl_es/65a47267377d4793c628ccf7/20001216124100.mhtml"
+    },
+    {
+        "banner_md5": "058d43425bf474c5f3192ca3d9ef0e9b",
+        "mhtml_file": "es/mhtml_intl_es/65a4726b377d4793c628cd05/20020601154801.mhtml"
+    },
+    {
+        "banner_md5": "058d43425bf474c5f3192ca3d9ef0e9b",
+        "mhtml_file": "es/mhtml_intl_es/65a4726b377d4793c628cd05/20020806020831.mhtml"
+    },
+    {
+        "banner_md5": "058d43425bf474c5f3192ca3d9ef0e9b",
+        "mhtml_file": "es/mhtml_intl_es/65a4726b377d4793c628cd05/20020918073327.mhtml"
+    },
+    {
+        "banner_md5": "058d43425bf474c5f3192ca3d9ef0e9b",
+        "mhtml_file": "es/mhtml_intl_es/65a4726b377d4793c628cd05/20021001221612.mhtml"
+    },
+    {
+        "banner_md5": "058d43425bf474c5f3192ca3d9ef0e9b",
+        "mhtml_file": "es/mhtml_intl_es/65a4726b377d4793c628cd05/20021223081905.mhtml"
+    },
+    {
+        "banner_md5": "4b06e57bcc131d6f53af2c521c28f9bc",
+        "mhtml_file": "es/mhtml_intl_es/65a4726b377d4793c628cd07/20000611012754.mhtml"
+    },
+    {
+        "banner_md5": "6c4b823f912ea07179a7603593a91813",
+        "mhtml_file": "es/mhtml_intl_es/65a4727f377d4793c628cd53/20021015220453.mhtml"
+    },
+    {
+        "banner_md5": "3c25b0cb41deff5a42bff8a8cbf5b74b",
+        "mhtml_file": "es/mhtml_intl_es/65a47280377d4793c628cd54/20020603124416.mhtml"
+    },
+    {
+        "banner_md5": "fc384151fce0f96267aea8f9855313e4",
+        "mhtml_file": "es/mhtml_intl_es/65a47280377d4793c628cd54/20021210024757.mhtml"
+    },
+    {
+        "banner_md5": "617dc548db14657365d35a79676130b7",
+        "mhtml_file": "es/mhtml_intl_es/65a47291377d4793c628cd96/20020726015450.mhtml"
+    },
+    {
+        "banner_md5": "617dc548db14657365d35a79676130b7",
+        "mhtml_file": "es/mhtml_intl_es/65a47291377d4793c628cd96/20020802042333.mhtml"
+    },
+    {
+        "banner_md5": "617dc548db14657365d35a79676130b7",
+        "mhtml_file": "es/mhtml_intl_es/65a47291377d4793c628cd96/20020922042437.mhtml"
+    },
+    {
+        "banner_md5": "617dc548db14657365d35a79676130b7",
+        "mhtml_file": "es/mhtml_intl_es/65a47291377d4793c628cd96/20020924175951.mhtml"
+    },
+    {
+        "banner_md5": "617dc548db14657365d35a79676130b7",
+        "mhtml_file": "es/mhtml_intl_es/65a47291377d4793c628cd96/20020927065341.mhtml"
+    },
+    {
+        "banner_md5": "617dc548db14657365d35a79676130b7",
+        "mhtml_file": "es/mhtml_intl_es/65a47291377d4793c628cd96/20020929065459.mhtml"
+    },
+    {
+        "banner_md5": "ae1e483e288874e8f3b5afd941ce9042",
+        "mhtml_file": "es/mhtml_intl_es/65a47291377d4793c628cd96/20021016082959.mhtml"
+    },
+    {
+        "banner_md5": "ae1e483e288874e8f3b5afd941ce9042",
+        "mhtml_file": "es/mhtml_intl_es/65a47291377d4793c628cd96/20021124074714.mhtml"
+    },
+    {
+        "banner_md5": "ae1e483e288874e8f3b5afd941ce9042",
+        "mhtml_file": "es/mhtml_intl_es/65a47291377d4793c628cd96/20021125193325.mhtml"
+    },
+    {
+        "banner_md5": "ae1e483e288874e8f3b5afd941ce9042",
+        "mhtml_file": "es/mhtml_intl_es/65a47291377d4793c628cd96/20021127152939.mhtml"
+    },
+    {
+        "banner_md5": "ae1e483e288874e8f3b5afd941ce9042",
+        "mhtml_file": "es/mhtml_intl_es/65a47291377d4793c628cd96/20021128074935.mhtml"
+    },
+    {
+        "banner_md5": "390fa3161c26460387b7902292d8f111",
+        "mhtml_file": "es/mhtml_intl_es/65a47298377d4793c628cdb0/20021125073135.mhtml"
+    },
+    {
+        "banner_md5": "390fa3161c26460387b7902292d8f111",
+        "mhtml_file": "es/mhtml_intl_es/65a47298377d4793c628cdb0/20021130190431.mhtml"
+    },
+    {
+        "banner_md5": "60925ca30a3462602e3e89fafc2e9fd3",
+        "mhtml_file": "es/mhtml_intl_es/65a472a4377d4793c628cddc/20021210050543.mhtml"
+    },
+    {
+        "banner_md5": "47da7384e9c5153b9c6798e7f6c43709",
+        "mhtml_file": "es/mhtml_intl_es/65a472b3377d4793c628ce15/20000519230222.mhtml"
+    },
+    {
+        "banner_md5": "47da7384e9c5153b9c6798e7f6c43709",
+        "mhtml_file": "es/mhtml_intl_es/65a472b3377d4793c628ce15/20000603105741.mhtml"
+    },
+    {
+        "banner_md5": "47da7384e9c5153b9c6798e7f6c43709",
+        "mhtml_file": "es/mhtml_intl_es/65a472b3377d4793c628ce15/20000621091414.mhtml"
+    },
+    {
+        "banner_md5": "47da7384e9c5153b9c6798e7f6c43709",
+        "mhtml_file": "es/mhtml_intl_es/65a472b3377d4793c628ce15/20000622034122.mhtml"
+    },
+    {
+        "banner_md5": "47da7384e9c5153b9c6798e7f6c43709",
+        "mhtml_file": "es/mhtml_intl_es/65a472b3377d4793c628ce15/20000707024301.mhtml"
+    },
+    {
+        "banner_md5": "47da7384e9c5153b9c6798e7f6c43709",
+        "mhtml_file": "es/mhtml_intl_es/65a472b3377d4793c628ce15/20000817201652.mhtml"
+    },
+    {
+        "banner_md5": "47da7384e9c5153b9c6798e7f6c43709",
+        "mhtml_file": "es/mhtml_intl_es/65a472b3377d4793c628ce15/20001006080531.mhtml"
+    },
+    {
+        "banner_md5": "47da7384e9c5153b9c6798e7f6c43709",
+        "mhtml_file": "es/mhtml_intl_es/65a472b3377d4793c628ce15/20001016001559.mhtml"
+    },
+    {
+        "banner_md5": "47da7384e9c5153b9c6798e7f6c43709",
+        "mhtml_file": "es/mhtml_intl_es/65a472b3377d4793c628ce15/20001017212809.mhtml"
+    },
+    {
+        "banner_md5": "47da7384e9c5153b9c6798e7f6c43709",
+        "mhtml_file": "es/mhtml_intl_es/65a472b3377d4793c628ce15/20001019054931.mhtml"
+    },
+    {
+        "banner_md5": "47da7384e9c5153b9c6798e7f6c43709",
+        "mhtml_file": "es/mhtml_intl_es/65a472b3377d4793c628ce15/20001019092906.mhtml"
+    },
+    {
+        "banner_md5": "47da7384e9c5153b9c6798e7f6c43709",
+        "mhtml_file": "es/mhtml_intl_es/65a472b3377d4793c628ce15/20001203094900.mhtml"
+    },
+    {
+        "banner_md5": "8b6d6f920fa85305b464c576b5c6563d",
+        "mhtml_file": "es/mhtml_intl_es/65a472c1377d4793c628ce46/19981203164907.mhtml"
+    },
+    {
+        "banner_md5": "8b6d6f920fa85305b464c576b5c6563d",
+        "mhtml_file": "es/mhtml_intl_es/65a472c1377d4793c628ce46/19981203164907.mhtml"
+    },
+    {
+        "banner_md5": "8b6d6f920fa85305b464c576b5c6563d",
+        "mhtml_file": "es/mhtml_intl_es/65a472c1377d4793c628ce46/19981212031325.mhtml"
+    },
+    {
+        "banner_md5": "8b6d6f920fa85305b464c576b5c6563d",
+        "mhtml_file": "es/mhtml_intl_es/65a472c1377d4793c628ce46/19981212031325.mhtml"
+    },
+    {
+        "banner_md5": "d9493e8bfba00c46c00454bf46a4f0bf",
+        "mhtml_file": "es/mhtml_intl_es/65a472c5377d4793c628ce59/20020601200100.mhtml"
+    },
+    {
+        "banner_md5": "f0c8e2a9c2a63e39594eb4a196f97d1c",
+        "mhtml_file": "es/mhtml_intl_es/65a472c6377d4793c628ce5e/19980613184434.mhtml"
+    },
+    {
+        "banner_md5": "938fe477a1322f84016bdd66ed791bef",
+        "mhtml_file": "es/mhtml_intl_es/65a472c6377d4793c628ce5e/19980613184435.mhtml"
+    },
+    {
+        "banner_md5": "938fe477a1322f84016bdd66ed791bef",
+        "mhtml_file": "es/mhtml_intl_es/65a472c6377d4793c628ce5e/19980704041426.mhtml"
+    },
+    {
+        "banner_md5": "aca63d45e2ffc4366e73fba2d4f4519d",
+        "mhtml_file": "es/mhtml_intl_es/65a472c7377d4793c628ce5f/20010929232218.mhtml"
+    },
+    {
+        "banner_md5": "0ca190b4015a8cc5c86888e0ce9cc2f3",
+        "mhtml_file": "es/mhtml_intl_es/65a472c7377d4793c628ce5f/20011018050905.mhtml"
+    },
+    {
+        "banner_md5": "0ca190b4015a8cc5c86888e0ce9cc2f3",
+        "mhtml_file": "es/mhtml_intl_es/65a472c7377d4793c628ce5f/20011018154502.mhtml"
+    },
+    {
+        "banner_md5": "0ca190b4015a8cc5c86888e0ce9cc2f3",
+        "mhtml_file": "es/mhtml_intl_es/65a472c7377d4793c628ce5f/20011019035854.mhtml"
+    },
+    {
+        "banner_md5": "0ca190b4015a8cc5c86888e0ce9cc2f3",
+        "mhtml_file": "es/mhtml_intl_es/65a472c7377d4793c628ce5f/20011025153708.mhtml"
+    },
+    {
+        "banner_md5": "0ca190b4015a8cc5c86888e0ce9cc2f3",
+        "mhtml_file": "es/mhtml_intl_es/65a472c7377d4793c628ce5f/20011028164539.mhtml"
+    },
+    {
+        "banner_md5": "0ca190b4015a8cc5c86888e0ce9cc2f3",
+        "mhtml_file": "es/mhtml_intl_es/65a472c7377d4793c628ce5f/20011103150949.mhtml"
+    },
+    {
+        "banner_md5": "3a9962c77166d463bb39b3abb18ab03d",
+        "mhtml_file": "es/mhtml_intl_es/65a472c7377d4793c628ce5f/20011109160929.mhtml"
+    },
+    {
+        "banner_md5": "531d53df2e98da67c2123feb45f10ee4",
+        "mhtml_file": "es/mhtml_intl_es/65a472cf377d4793c628ce7b/20010123215500.mhtml"
+    },
+    {
+        "banner_md5": "531d53df2e98da67c2123feb45f10ee4",
+        "mhtml_file": "es/mhtml_intl_es/65a472cf377d4793c628ce7b/20010124063900.mhtml"
+    },
+    {
+        "banner_md5": "531d53df2e98da67c2123feb45f10ee4",
+        "mhtml_file": "es/mhtml_intl_es/65a472cf377d4793c628ce7b/20010207030739.mhtml"
+    },
+    {
+        "banner_md5": "531d53df2e98da67c2123feb45f10ee4",
+        "mhtml_file": "es/mhtml_intl_es/65a472cf377d4793c628ce7b/20010410192316.mhtml"
+    },
+    {
+        "banner_md5": "531d53df2e98da67c2123feb45f10ee4",
+        "mhtml_file": "es/mhtml_intl_es/65a472cf377d4793c628ce7b/20010508092308.mhtml"
+    },
+    {
+        "banner_md5": "531d53df2e98da67c2123feb45f10ee4",
+        "mhtml_file": "es/mhtml_intl_es/65a472cf377d4793c628ce7b/20010606153802.mhtml"
+    },
+    {
+        "banner_md5": "531d53df2e98da67c2123feb45f10ee4",
+        "mhtml_file": "es/mhtml_intl_es/65a472cf377d4793c628ce7b/20010710223615.mhtml"
+    },
+    {
+        "banner_md5": "531d53df2e98da67c2123feb45f10ee4",
+        "mhtml_file": "es/mhtml_intl_es/65a472cf377d4793c628ce7b/20011204214209.mhtml"
+    },
+    {
+        "banner_md5": "136a3c43ebe395b0d002a27c7db23bd9",
+        "mhtml_file": "es/mhtml_intl_es/65a472cf377d4793c628ce7b/20020609154435.mhtml"
+    },
+    {
+        "banner_md5": "43e691071778990252329b2a6a56a1bf",
+        "mhtml_file": "es/mhtml_intl_es/65a472d2377d4793c628ce82/20010119103400.mhtml"
+    },
+    {
+        "banner_md5": "43e691071778990252329b2a6a56a1bf",
+        "mhtml_file": "es/mhtml_intl_es/65a472d2377d4793c628ce82/20010119183000.mhtml"
+    },
+    {
+        "banner_md5": "43e691071778990252329b2a6a56a1bf",
+        "mhtml_file": "es/mhtml_intl_es/65a472d2377d4793c628ce82/20010516190628.mhtml"
+    },
+    {
+        "banner_md5": "a783cb7f5c358c44f7cb0813df2762ee",
+        "mhtml_file": "es/mhtml_intl_es/65a472d3377d4793c628ce89/19991013071414.mhtml"
+    },
+    {
+        "banner_md5": "9b431c37cb11d14769db261ba75df333",
+        "mhtml_file": "es/mhtml_intl_es/65a472d6377d4793c628ce93/19991002065859.mhtml"
+    },
+    {
+        "banner_md5": "4198415ea02071537e0a89f9e00dbd57",
+        "mhtml_file": "es/mhtml_intl_es/65a472d6377d4793c628ce93/20000303010936.mhtml"
+    },
+    {
+        "banner_md5": "d07df66f7f3ad13a75278d3f6ae0170a",
+        "mhtml_file": "es/mhtml_intl_es/65a472d6377d4793c628ce93/20010401010559.mhtml"
+    },
+    {
+        "banner_md5": "d9c985c55193083fad942a7501eb9cea",
+        "mhtml_file": "es/mhtml_intl_es/65a472d6377d4793c628ce93/20010708184604.mhtml"
+    },
+    {
+        "banner_md5": "d9c985c55193083fad942a7501eb9cea",
+        "mhtml_file": "es/mhtml_intl_es/65a472d6377d4793c628ce93/20010708193940.mhtml"
+    },
+    {
+        "banner_md5": "ecc8d8e4c3fe8b19fbc8fa8d175ce11b",
+        "mhtml_file": "es/mhtml_intl_es/65a472d8377d4793c628ce9b/20020804233634.mhtml"
+    },
+    {
+        "banner_md5": "a28a4ee81848fe051c21070a8342cb4e",
+        "mhtml_file": "es/mhtml_intl_es/65a472eb377d4793c628cee2/20000816094425.mhtml"
+    },
+    {
+        "banner_md5": "a28a4ee81848fe051c21070a8342cb4e",
+        "mhtml_file": "es/mhtml_intl_es/65a472eb377d4793c628cee2/20001109020500.mhtml"
+    },
+    {
+        "banner_md5": "a28a4ee81848fe051c21070a8342cb4e",
+        "mhtml_file": "es/mhtml_intl_es/65a472eb377d4793c628cee2/20010124151700.mhtml"
+    },
+    {
+        "banner_md5": "a28a4ee81848fe051c21070a8342cb4e",
+        "mhtml_file": "es/mhtml_intl_es/65a472eb377d4793c628cee2/20010207211842.mhtml"
+    },
+    {
+        "banner_md5": "a28a4ee81848fe051c21070a8342cb4e",
+        "mhtml_file": "es/mhtml_intl_es/65a472eb377d4793c628cee2/20010410205301.mhtml"
+    },
+    {
+        "banner_md5": "a28a4ee81848fe051c21070a8342cb4e",
+        "mhtml_file": "es/mhtml_intl_es/65a472eb377d4793c628cee2/20010531043522.mhtml"
+    },
+    {
+        "banner_md5": "a28a4ee81848fe051c21070a8342cb4e",
+        "mhtml_file": "es/mhtml_intl_es/65a472eb377d4793c628cee2/20010606134650.mhtml"
+    },
+    {
+        "banner_md5": "a28a4ee81848fe051c21070a8342cb4e",
+        "mhtml_file": "es/mhtml_intl_es/65a472eb377d4793c628cee2/20010609031041.mhtml"
+    },
+    {
+        "banner_md5": "a28a4ee81848fe051c21070a8342cb4e",
+        "mhtml_file": "es/mhtml_intl_es/65a472eb377d4793c628cee2/20010610153802.mhtml"
+    },
+    {
+        "banner_md5": "a28a4ee81848fe051c21070a8342cb4e",
+        "mhtml_file": "es/mhtml_intl_es/65a472eb377d4793c628cee2/20010614130549.mhtml"
+    },
+    {
+        "banner_md5": "dc7fbad25bb4a16e7ab9534f0a85b887",
+        "mhtml_file": "es/mhtml_intl_es/65a47304377d4793c628cf3c/20011112235752.mhtml"
+    },
+    {
+        "banner_md5": "dc7fbad25bb4a16e7ab9534f0a85b887",
+        "mhtml_file": "es/mhtml_intl_es/65a47304377d4793c628cf3c/20011114200858.mhtml"
+    },
+    {
+        "banner_md5": "dc7fbad25bb4a16e7ab9534f0a85b887",
+        "mhtml_file": "es/mhtml_intl_es/65a47304377d4793c628cf3c/20011116002625.mhtml"
+    },
+    {
+        "banner_md5": "dc7fbad25bb4a16e7ab9534f0a85b887",
+        "mhtml_file": "es/mhtml_intl_es/65a47304377d4793c628cf3c/20011116184853.mhtml"
+    },
+    {
+        "banner_md5": "dc7fbad25bb4a16e7ab9534f0a85b887",
+        "mhtml_file": "es/mhtml_intl_es/65a47304377d4793c628cf3c/20011118002708.mhtml"
+    },
+    {
+        "banner_md5": "dc7fbad25bb4a16e7ab9534f0a85b887",
+        "mhtml_file": "es/mhtml_intl_es/65a47304377d4793c628cf3c/20011123023114.mhtml"
+    },
+    {
+        "banner_md5": "c2e4af28922f248116c95a2c422b40cc",
+        "mhtml_file": "es/mhtml_intl_es/65a47304377d4793c628cf3c/20011124022748.mhtml"
+    },
+    {
+        "banner_md5": "c2e4af28922f248116c95a2c422b40cc",
+        "mhtml_file": "es/mhtml_intl_es/65a47304377d4793c628cf3c/20011124160042.mhtml"
+    },
+    {
+        "banner_md5": "c2e4af28922f248116c95a2c422b40cc",
+        "mhtml_file": "es/mhtml_intl_es/65a47304377d4793c628cf3c/20011125205459.mhtml"
+    },
+    {
+        "banner_md5": "c2e4af28922f248116c95a2c422b40cc",
+        "mhtml_file": "es/mhtml_intl_es/65a47304377d4793c628cf3c/20011126170740.mhtml"
+    },
+    {
+        "banner_md5": "c2e4af28922f248116c95a2c422b40cc",
+        "mhtml_file": "es/mhtml_intl_es/65a47304377d4793c628cf3c/20011128052934.mhtml"
+    },
+    {
+        "banner_md5": "be0f4b0445a5939d1e71423c6067e6f7",
+        "mhtml_file": "es/mhtml_intl_es/65a47308377d4793c628cf4a/20010208184015.mhtml"
+    },
+    {
+        "banner_md5": "be0f4b0445a5939d1e71423c6067e6f7",
+        "mhtml_file": "es/mhtml_intl_es/65a47308377d4793c628cf4a/20010529112324.mhtml"
+    },
+    {
+        "banner_md5": "be0f4b0445a5939d1e71423c6067e6f7",
+        "mhtml_file": "es/mhtml_intl_es/65a47308377d4793c628cf4a/20010605063455.mhtml"
+    },
+    {
+        "banner_md5": "7c9936fd83dda67143fe38c18f20942a",
+        "mhtml_file": "es/mhtml_intl_es/65a47308377d4793c628cf4a/20010918212610.mhtml"
+    },
+    {
+        "banner_md5": "be0f4b0445a5939d1e71423c6067e6f7",
+        "mhtml_file": "es/mhtml_intl_es/65a47308377d4793c628cf4a/20010919113443.mhtml"
+    },
+    {
+        "banner_md5": "be0f4b0445a5939d1e71423c6067e6f7",
+        "mhtml_file": "es/mhtml_intl_es/65a47308377d4793c628cf4a/20010919224946.mhtml"
+    },
+    {
+        "banner_md5": "7c9936fd83dda67143fe38c18f20942a",
+        "mhtml_file": "es/mhtml_intl_es/65a47308377d4793c628cf4a/20010920025030.mhtml"
+    },
+    {
+        "banner_md5": "7c9936fd83dda67143fe38c18f20942a",
+        "mhtml_file": "es/mhtml_intl_es/65a47308377d4793c628cf4a/20010920112713.mhtml"
+    },
+    {
+        "banner_md5": "7c9936fd83dda67143fe38c18f20942a",
+        "mhtml_file": "es/mhtml_intl_es/65a47308377d4793c628cf4a/20010921002254.mhtml"
+    },
+    {
+        "banner_md5": "7c9936fd83dda67143fe38c18f20942a",
+        "mhtml_file": "es/mhtml_intl_es/65a47308377d4793c628cf4a/20010921132957.mhtml"
+    },
+    {
+        "banner_md5": "cb94fabb2102f5d0bcb5c18326223863",
+        "mhtml_file": "es/mhtml_intl_es/65a4730d377d4793c628cf5f/20000229212756.mhtml"
+    },
+    {
+        "banner_md5": "cb94fabb2102f5d0bcb5c18326223863",
+        "mhtml_file": "es/mhtml_intl_es/65a4730d377d4793c628cf5f/20000301214928.mhtml"
+    },
+    {
+        "banner_md5": "cb94fabb2102f5d0bcb5c18326223863",
+        "mhtml_file": "es/mhtml_intl_es/65a4730d377d4793c628cf5f/20000511235328.mhtml"
+    },
+    {
+        "banner_md5": "cb94fabb2102f5d0bcb5c18326223863",
+        "mhtml_file": "es/mhtml_intl_es/65a4730d377d4793c628cf5f/20000520061610.mhtml"
+    }
+]
