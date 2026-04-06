@@ -67,10 +67,14 @@ function handleMissedClick(event) {
 }
 
 // Load the banner data from the JSON file
-fetch('banner_data.json')
+fetch('../banner_data.json')
   .then((response) => response.json())
   .then((data) => {
-    bannerData = data;
+    bannerData = data.map(d => ({
+      ...d,
+      image_path: '../' + d.image_path.replace(/^\.\//, ''),
+      html_path: d.html_path ? '../' + d.html_path.replace(/^\.\//, '') : null
+    }));
     setLanguage('en');
   })
   .catch((error) => console.error('Error loading JSON:', error));

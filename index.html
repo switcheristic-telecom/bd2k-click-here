@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click here / Clic aquí / クリック / 点击</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Section 1: Installation Experience -->
+    <section id="banner-section">
+      <div class="win95-window" id="window1" style="top: 50px; left: 50px">
+        <div class="win95-titlebar no-select">Click here / Clic aquí / クリック / 点击</div>
+        <div class="win95-content">
+          <iframe src="installation/banner-page.html"></iframe>
+        </div>
+        <div class="win95-resizer"></div>
+      </div>
+      <div class="win95-window" id="window2" style="top: 100px; left: calc(100vw - 850px)">
+        <div class="win95-titlebar no-select">Source Webpage</div>
+        <div class="win95-content">
+          <iframe src="installation/snapshot-page.html"></iframe>
+        </div>
+        <div class="win95-resizer"></div>
+      </div>
+
+      <button id="scroll-hint" class="no-select" onclick="document.getElementById('about-section').scrollIntoView({behavior:'smooth'})">About this installation &#x2193;</button>
+    </section>
+
+    <!-- Section 2: Installation Context -->
+    <section id="about-section">
+      <div id="model-container">
+        <model-viewer
+          src="assets/SPAM-draco.glb"
+          alt="3D scan of the Click Here installation at Georgetown Steam Plant"
+          camera-controls
+          touch-action="pan-y"
+          auto-rotate
+          shadow-intensity="0.5"
+          camera-orbit="45deg 65deg 4m"
+          min-camera-orbit="auto auto 1.5m"
+          max-camera-orbit="auto auto 8m"
+          field-of-view="45deg"
+          loading="lazy"
+          reveal="auto"
+        >
+          <div slot="progress-bar" id="model-progress">
+            <div id="model-progress-bar"></div>
+          </div>
+        </model-viewer>
+        <p id="model-caption">
+          Installation view at Georgetown Steam Plant, Seattle &mdash; drag to orbit
+        </p>
+      </div>
+
+      <div id="about-text">
+        <h1>Click here&hellip;</h1>
+
+        <p>
+          <em>Click Here&hellip;</em> is an interactive installation that showcases an
+          archive of early web banner ads in different languages curated
+          from the Wayback Machine. Banner ads are a form of graphical
+          advertisement prevalent on the web in the late 1990s and early
+          2000s. Widely regarded by early web users as a visual nuisance for
+          their gaudy graphics and flashy animations, banner ads
+          nevertheless played an important role in shaping the online
+          experience for users worldwide.
+        </p>
+
+        <p>
+          <em>Click Here&hellip;</em> is composed of a period-appropriate CRT monitor, a
+          computer mouse, and a wall projection. Visitors can click the
+          mouse button to browse through banner ad frames centered on the
+          iconic phrase &ldquo;click here&rdquo; (or its counterparts in different
+          languages) on the monitor. Each time a new banner ad frame is
+          loaded, the wall projection showcases the original web page where
+          the banner ad originally appeared. By highlighting the most
+          archetypical phrase in these ads and showcasing the original web
+          pages, <em>Click Here&hellip;</em> is both a demonstration of the dot-com era
+          commercial culture and a comparative study of the distinctive
+          characteristics and commonalities of early web design patterns
+          between web pages in different languages.
+        </p>
+
+        <p>
+          By offering a space to (re)experience the early web&rsquo;s ethos and
+          aesthetics, <em>Click Here&hellip;</em> invites visitors to reflect upon the
+          trending nostalgia of the dot-com era through exploring the tension
+          between romanticizing the past web and acknowledging its complex
+          legacy in paving the way for the hyper-surveilled, ad-saturated
+          Internet of today.
+        </p>
+
+        <hr />
+
+        <div id="credits">
+          <p>
+            by
+            <a href="https://lewei.me" target="_blank" rel="noreferrer">Richard L. Huang</a>
+            and
+            <a href="https://yufengzhao.com" target="_blank" rel="noreferrer">Yufeng Zhao</a>
+            <br />
+            as
+            <a href="https://swtch.tel" target="_blank" rel="noreferrer">Switcheristic Telecommunications</a>
+          </p>
+
+          <p>
+            <a href="https://spamnewmediafestival.com/" target="_blank" rel="noreferrer">SPAM New Media Festival</a>
+            <br />
+            September 27&ndash;29, 2024
+            <br />
+            Georgetown Steam Plant, Seattle, WA
+          </p>
+        </div>
+
+        <hr />
+
+        <div id="links">
+          <p>
+            <a href="installation/index.html">View the installation experience</a>
+          </p>
+          <p>
+            <a href="https://github.com/switcheristic-telecom/bd2k-click-here" target="_blank" rel="noreferrer">Source code on GitHub</a>
+          </p>
+        </div>
+
+        <hr />
+
+        <div id="powered-by">
+          <span>powered by</span>
+          <a href="https://banner-depot-2000.net" target="_blank" rel="noreferrer">
+            <img src="assets/banner-depot-2000-slim.svg" alt="Banner Depot 2000" id="bd2k-logo" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
