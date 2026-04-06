@@ -31,105 +31,23 @@ body {
 }
 
 /* ============================================
-   Section 1: Banner Experience
+   Section 1: Installation Experience
    ============================================ */
 
 #banner-section {
   position: relative;
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #1c54f5;
+  height: 100dvh;
+  background-color: #008080;
   overflow: hidden;
-}
-
-/* Language nav */
-
-#language-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 16px 24px;
-  display: flex;
-  gap: 10px;
-  font-size: 1.6rem;
-  z-index: 10;
-}
-
-.lang-btn {
-  background: none;
-  border: none;
-  color: #fff;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-  padding: 0;
-}
-
-.lang-btn:hover {
-  text-decoration: underline;
-}
-
-.lang-btn.active {
-  text-decoration: underline;
-  cursor: default;
-}
-
-.lang-sep {
-  opacity: 0.5;
-}
-
-/* Banner display */
-
-#banner-display {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  width: 100%;
-}
-
-#banner-container {
-  position: relative;
-  display: inline-block;
-}
-
-#banner-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-#ocr-highlight {
-  position: absolute;
-  border: 3px solid #ff0000;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-#ocr-click-target {
-  position: absolute;
-  background-color: #1c54f5;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  opacity: 0;
-  z-index: 5;
-  padding: 12px 40px;
-}
-
-@keyframes blink {
-  0%, 50%, 66.7%, 83.3%, 100% { opacity: 1; }
-  58.35%, 75%, 91.75% { opacity: 0; }
+  padding: 20px;
 }
 
 /* Win95 window */
 
 .win95-window {
+  position: absolute;
+  width: 800px;
+  height: 600px;
   background-color: #c0c0c0;
   border: 2px solid #dfdfdf;
   border-right-color: #808080;
@@ -138,6 +56,12 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'WenQuanYi Bitmap Song', Arial, sans-serif;
+  will-change: transform;
+  contain: layout style;
+}
+
+.win95-window.dragging {
+  box-shadow: none;
 }
 
 .win95-titlebar {
@@ -158,10 +82,8 @@ body {
 }
 
 .win95-content iframe {
-  width: 200%;
-  height: 200%;
-  transform: scale(0.5);
-  transform-origin: 0 0;
+  width: 100%;
+  height: 100%;
   border: none;
 }
 
@@ -189,28 +111,6 @@ body {
 .win95-resizer::before {
   bottom: 8px;
   right: 8px;
-}
-
-/* Source panel positioning */
-
-#source-panel {
-  position: absolute;
-  bottom: 40px;
-  right: 20px;
-  width: 480px;
-  height: 360px;
-  z-index: 10;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  will-change: transform;
-}
-
-#source-panel.visible {
-  opacity: 1;
-}
-
-#source-panel.dragging {
-  box-shadow: none;
 }
 
 /* Scroll hint */
@@ -348,6 +248,7 @@ model-viewer {
   height: auto;
   opacity: 0.7;
   transition: opacity 0.2s;
+  filter: invert(1);
 }
 
 #bd2k-logo:hover {
@@ -359,22 +260,29 @@ model-viewer {
    ============================================ */
 
 @media (max-width: 768px) {
-  #language-nav {
-    font-size: 1.1rem;
-    padding: 12px 16px;
-    flex-wrap: wrap;
+  #banner-section {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
   }
 
-  #source-panel {
-    position: relative;
-    bottom: auto;
-    right: auto;
-    width: 100%;
-    height: 220px;
+  .win95-window {
+    position: static !important;
+    width: 100% !important;
+    transform: none !important;
     box-shadow: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
+    border: none;
+    border-bottom: 2px solid #808080;
+    flex: 1;
+    min-height: 0;
+  }
+
+  .win95-content iframe {
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+    transform-origin: 0 0;
   }
 
   .win95-titlebar {
@@ -385,12 +293,18 @@ model-viewer {
     display: none;
   }
 
-  #source-panel.visible {
-    opacity: 1;
-  }
-
   #scroll-hint {
-    display: none;
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-top: 2px solid #808080;
+    background: #008080;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.8rem;
+    text-align: center;
+    flex-shrink: 0;
   }
 
   model-viewer {

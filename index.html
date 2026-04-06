@@ -11,30 +11,19 @@
     ></script>
   </head>
   <body>
-    <!-- Section 1: Banner Experience -->
+    <!-- Section 1: Installation Experience -->
     <section id="banner-section">
-      <nav id="language-nav" class="no-select">
-        <button class="lang-btn active" data-lang="en">Click here</button>
-        <span class="lang-sep">/</span>
-        <button class="lang-btn" data-lang="es">Clic aquí</button>
-        <span class="lang-sep">/</span>
-        <button class="lang-btn" data-lang="ja">クリック</button>
-        <span class="lang-sep">/</span>
-        <button class="lang-btn" data-lang="zh">点击</button>
-      </nav>
-
-      <div id="banner-display">
-        <div id="banner-container">
-          <img id="banner-image" src="" alt="Banner ad" class="no-select" />
-          <div id="ocr-highlight" class="no-select"></div>
-          <div id="ocr-click-target" class="no-select"></div>
-        </div>
-      </div>
-
-      <div id="source-panel" class="win95-window">
-        <div id="source-titlebar" class="win95-titlebar no-select">Source Webpage</div>
+      <div class="win95-window" id="window1" style="top: 50px; left: 50px">
+        <div class="win95-titlebar no-select">Click here / Clic aquí / クリック / 点击</div>
         <div class="win95-content">
-          <iframe id="source-frame" src="about:blank"></iframe>
+          <iframe src="installation/banner-page.html"></iframe>
+        </div>
+        <div class="win95-resizer"></div>
+      </div>
+      <div class="win95-window" id="window2" style="top: 100px; left: calc(100vw - 850px)">
+        <div class="win95-titlebar no-select">Source Webpage</div>
+        <div class="win95-content">
+          <iframe src="installation/snapshot-page.html"></iframe>
         </div>
         <div class="win95-resizer"></div>
       </div>
